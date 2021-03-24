@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Karamatsu Sever</title>
+	<meta name="title" content="Karamatsu Sever">
+	<meta name="description" content="Karamatsu fan.">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,900;1,900&display=block">
+	<link rel="stylesheet" href="./assets/style-index.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/brand/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/brand/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/brand/favicon-16x16.png">
+	<link rel="manifest" href="./assets/brand/site.webmanifest">
+	<meta name="msapplication-config" content="./assets/brand/browserconfig.xml" />
+	<meta name="msapplication-TileColor" content="#1A50BC">
+	<meta name="theme-color" content="#1A50BC">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Karamatsu Sever">
+	<meta property="og:description" content="Karamatsu fan.">
+	<meta property="og:image" content="./assets/brand/social-image.png">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="Karamatsu Sever">
+	<meta property="twitter:description" content="Karamatsu fan.">
+	<meta property="twitter:image" content="./assets/brand/social-image.png">
+</head>
+
+<body>
+	<section class="home">
+		<div class="container">
+			<img src="./assets/karamatsu.svg" alt="Karamatsu" class="karamatsu">
+			<div class="text">
+				<div class="title">KARAMATSU SEVER★★★</div>
+				<div class="bio">
+					Hello! I’m Karamatsu Sever (meaning “Karamatsu lover”).
+					I&nbsp;enjoy the anime series Osomatsu-san.
+					Nice to meet you!!<br />
+					<br />
+					✦ 20 years old<br />
+					✦ Male (he/him)<br />
+					✦ Trilingual<br />
+					✦ Lives in Belgium <img src="./assets/flag-be.svg" alt="Belgium" class="flag"> <img
+						src="./assets/flag-eu.svg" alt="Europe" class="flag"><br />
+					✦ Platonic & BLmatsu
+				</div>
+				<div class="buttons">
+					<a href="javascript:void(0)" class="btn" id="fav-pairings-btn">
+						<img src="./assets/icon-people.svg" alt=""><span>My favourite pairings</span>
+					</a>
+
+					<a href="https://twitter.com/karamatsusever" target="_blank" class="btn single right"><img
+							src="./assets/icon-twitter.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="faves">
+		<div class="container">
+			<div class="title">★&nbsp;<i>My favourite pairings</i>&nbsp;★</div>
+			<div class="pairings">
+				<div class="pair" style="--bg: url(./pair-iro.webp);--one:#A88DCB;--two:#7DA9F8">
+					<div class="image"></div>
+					<div class="image-blur"></div>
+					<div class="image-overlay"></div>
+					<div class="text">
+						<div class="main">Iro</div>
+						<div>Kara &amp; Ichi</div>
+					</div>
+				</div>
+				<div class="pair divider"><img src="./assets/pair-divider.svg" /></div>
+				<div class="pair" style="--bg: url(./pair-kinniku.webp);--one:#ECF176;--two:#7DA9F8">
+					<div class="image"></div>
+					<div class="image-blur"></div>
+					<div class="image-overlay"></div>
+					<div class="text">
+						<div class="main">Kinniku</div>
+						<div>Jyushi &amp; Kara</div>
+					</div>
+				</div>
+				<div class="pair divider"><img src="./assets/pair-divider.svg" /></div>
+				<div class="pair" style="--bg: url(./pair-suuji.webp);--one:#ECF176;--two:#A88DCB">
+					<div class="image"></div>
+					<div class="image-blur"></div>
+					<div class="image-overlay"></div>
+					<div class="text">
+						<div class="main">Suuji</div>
+						<div>Jyushi &amp; Ichi</div>
+					</div>
+				</div>
+				<div class="pair divider"><img src="./assets/pair-divider.svg" /></div>
+			</div>
+	</section>
+	<script>
+		document.getElementById("fav-pairings-btn").addEventListener("click", () =>
+			document.querySelector("section.faves").scrollIntoView({
+				behavior: 'smooth'
+			})
+		);
+	</script>
+</body>
+
+</html>
