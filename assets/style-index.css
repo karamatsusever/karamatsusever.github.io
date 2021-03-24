@@ -202,13 +202,32 @@ section.faves .pair .image-overlay {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		var(--bg);
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	transition: background-size 0.5s, opacity 0.5s;
 	will-change: background-size;
+}
+
+section.faves .pair.iro .image,
+section.faves .pair.iro .image-blur,
+section.faves .pair.iro .image-overlay {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(./pair-iro.webp);
+}
+
+section.faves .pair.kinniku .image,
+section.faves .pair.kinniku .image-blur,
+section.faves .pair.kinniku .image-overlay {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(./pair-kinniku.webp);
+}
+
+section.faves .pair.suuji .image,
+section.faves .pair.suuji .image-blur,
+section.faves .pair.suuji .image-overlay {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(./pair-suuji.webp);
 }
 
 section.faves .pair:hover .image,
@@ -226,7 +245,11 @@ section.faves .pair .image-blur {
 }
 
 section.faves .pair .image-overlay {
-	background-image: linear-gradient(to right, var(--one), var(--two));
+	background-image: linear-gradient(
+		to right,
+		var(--one),
+		var(--two)
+	) !important;
 	mix-blend-mode: color;
 }
 
