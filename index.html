@@ -3,8 +3,8 @@
 
 <head>
 	<title>Karamatsu Sever</title>
-	<meta name="title" content="Karamatsu Sever">
-	<meta name="description" content="Karamatsu fan.">
+	<meta name="title" content="Duncan">
+	<meta name="description" content="My Matsu-themed about-me page">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,12 +20,12 @@
 	<meta name="msapplication-TileColor" content="#1A50BC">
 	<meta name="theme-color" content="#1A50BC">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Karamatsu Sever">
-	<meta property="og:description" content="Karamatsu fan.">
+	<meta property="og:title" content="Duncan">
+	<meta property="og:description" content="My Matsu-themed about-me page">
 	<meta property="og:image" content="https://karamatsusever.github.io/assets/brand/social-image.png">
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Karamatsu Sever">
-	<meta property="twitter:description" content="Karamatsu fan.">
+	<meta property="twitter:title" content="Duncan">
+	<meta property="twitter:description" content="My Matsu-themed about-me page">
 	<meta property="twitter:image" content="https://karamatsusever.github.io/assets/brand/social-image.png">
 </head>
 
@@ -34,13 +34,12 @@
 		<div class="container">
 			<img src="./assets/karamatsu.svg" alt="Karamatsu" class="karamatsu">
 			<div class="text">
-				<div class="title">karamatsu sever</div>
+				<div class="title">duncan</div>
 				<div class="bio">
-					Hello! I’m Karamatsu Sever (meaning “Karamatsu lover”).
-					I&nbsp;enjoy the anime series Osomatsu-san.
-					Nice to meet you!!<br />
+					Hello! I’m Duncan. I’m just a guy enjoying things.
+					I mainly enjoy Osomatsu-san and its fanart.<br />
 					<br />
-					✦ 20 years old<br />
+					✦ 21 years old<br />
 					✦ Male (he/him) <img src="./assets/flag-lgbtq.svg" alt="LGBTQ+" class="flag"> <img
 						src="./assets/flag-gay-male.svg" alt="Gay male" class="flag"><br />
 					✦ Trilingual <img src="./assets/flag-gb.svg" alt="English" class="flag"> <img
@@ -51,12 +50,21 @@
 					✦ Platonic, BLmatsu and Selfship
 				</div>
 				<div class="buttons">
-					<a href="javascript:void(0)" class="btn" id="fav-pairings-btn">
+					<a href="javascript:void(0)" class="btn"
+						onclick="document.querySelector('section.faves').scrollIntoView({behavior: 'smooth'})">
 						<img src="./assets/icon-people.svg" alt=""><span>My favourite pairings</span>
 					</a>
 
-					<a href="https://twitter.com/karamatsusever" target="_blank" class="btn single right"><img
-							src="./assets/icon-twitter.svg" alt=""></a>
+					<a href="https://twitter.com/duncannah" class="btn right">
+						<span>Main</span><img src="./assets/icon-twitter.svg" alt="">
+					</a>
+
+					<a href="https://twitter.com/karamatsusever" class="btn right">
+						<span>BLmatsu</span><img src="./assets/icon-twitter.svg" alt="">
+					</a>
+
+					<!-- <a href="https://twitter.com/karamatsusever" target="_blank" class="btn single right"><img
+							src="./assets/icon-twitter.svg" alt=""></a> -->
 				</div>
 			</div>
 		</div>
@@ -97,13 +105,6 @@
 				<div class="pair divider"><img src="./assets/pair-divider.svg" /></div>
 			</div>
 	</section>
-	<script>
-		document.getElementById("fav-pairings-btn").addEventListener("click", () =>
-			document.querySelector("section.faves").scrollIntoView({
-				behavior: 'smooth'
-			})
-		);
-	</script>
 </body>
 
 </html>

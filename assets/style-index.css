@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'SFRounded-Black';
-	src: url('SFRounded-Black.woff2') format('woff2');
+	font-family: "SFRounded-Black";
+	src: url("SFRounded-Black.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -72,7 +72,7 @@ section.home .text {
 }
 
 section.home .title {
-	font-family: 'SFRounded-Black', sans-serif;
+	font-family: "SFRounded-Black", sans-serif;
 	font-size: 96px;
 	line-height: 90%;
 	text-shadow: 0 10px rgba(0, 0, 0, 0.25);
@@ -96,6 +96,7 @@ section.home .bio {
 	padding: 5px 15px;
 	border-radius: 35px;
 	box-shadow: 0 6px rgba(0, 0, 0, 0.25);
+	margin-bottom: 16px;
 }
 
 .btn img {
@@ -110,9 +111,10 @@ section.home .bio {
 
 .btn.right {
 	float: right;
+	text-align: right;
 }
 
-.btn img + span {
+.btn > span {
 	margin: 15px;
 }
 
@@ -172,7 +174,7 @@ section.faves .container {
 }
 
 section.faves .title {
-	font-family: 'SFRounded-Black', sans-serif;
+	font-family: "SFRounded-Black", sans-serif;
 	font-size: 72px;
 	text-align: center;
 }
