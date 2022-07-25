@@ -1,0 +1,327 @@
+@font-face {
+	font-family: "SFRounded-Black";
+	src: url("SFRounded-Black.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	color-scheme: dark;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	color: #fff;
+	font-family: "Karla", sans-serif;
+	font-size: 24px;
+	text-shadow: 0 4px rgba(0, 0, 0, 0.25);
+	text-rendering: geometricPrecision;
+	user-select: none;
+}
+
+.flag {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.2em;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+
+	background-color: var(--bg);
+
+	background-image: url("data:image/svg+xml,%3Csvg width='85' height='75' viewBox='0 0 85 75' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40.2078 30.4644C42.3289 29.5524 44.9478 29.994 46.6094 31.6981C47.6551 32.7554 48.2834 34.2385 48.4132 35.7594C50.5024 34.8368 53.1557 35.6771 54.3349 37.7544C55.0809 39.0058 55.21 40.6415 54.6681 42.007C54.0543 43.6048 52.5882 44.7672 50.9858 44.997C50.7104 45.0195 50.4858 44.8327 50.2599 44.697C45.6786 41.8161 39.6874 41.8132 35.0386 44.5274C34.6424 44.7308 34.257 45.1324 33.7816 44.9566C31.5965 44.5491 29.8186 42.3103 30.0148 39.9219C30.0868 38.5852 30.7442 37.315 31.7335 36.4946C33.0767 35.3505 35.0009 35.078 36.5926 35.7594C36.7618 33.4681 38.1666 31.2944 40.2078 30.4644Z' fill='white' fill-opacity='0.05'/%3E%3C/svg%3E%0A");
+	animation: 4s linear infinite bg;
+}
+
+@keyframes bg {
+	0% {
+		background-position: 0px 0px;
+	}
+
+	100% {
+		background-position: -85px -75px;
+	}
+}
+
+section.home {
+	--bg: #1a50bc;
+}
+
+section.home .container {
+	width: 990px;
+	display: flex;
+	margin: 100px 0;
+}
+
+section.home .karamatsu {
+	width: 328px;
+	filter: drop-shadow(0 10px rgba(0, 0, 0, 0.25));
+}
+
+section.home .text {
+	flex-grow: 1;
+	margin-left: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section.home .title {
+	font-family: "SFRounded-Black", sans-serif;
+	font-size: 96px;
+	line-height: 90%;
+	text-shadow: 0 10px rgba(0, 0, 0, 0.25);
+}
+
+section.home .bio {
+	margin-top: 10px;
+	/* text-align: justify; */
+}
+
+.buttons {
+	margin-top: 40px;
+}
+
+.btn {
+	display: inline-block;
+	background: #fff;
+	text-shadow: none;
+	text-decoration: none;
+	color: var(--bg);
+	padding: 5px 15px;
+	border-radius: 35px;
+	box-shadow: 0 6px rgba(0, 0, 0, 0.25);
+	margin-bottom: 16px;
+}
+
+.btn img {
+	vertical-align: -0.65em;
+	width: 48px;
+	height: 48px;
+}
+
+.btn.single {
+	padding: 5px;
+}
+
+.btn.right {
+	float: right;
+	text-align: right;
+}
+
+.btn > span {
+	margin: 15px;
+}
+
+@media (max-width: 990px) {
+	section.home .karamatsu {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -77px;
+		margin: auto;
+	}
+
+	section.home {
+		text-align: center;
+	}
+
+	section.home .text {
+		z-index: 1;
+	}
+
+	section.home .title {
+		font-size: 52px;
+	}
+
+	section.home .text {
+		margin-left: 0;
+		margin: 0 20px;
+	}
+
+	.buttons {
+		text-align: center;
+	}
+
+	.btn:not(.single) {
+		/* width: 100%; */
+		padding: 5px 12px;
+		/* margin-top: 15px; */
+	}
+
+	.btn {
+		margin-top: 15px;
+	}
+
+	.btn.right {
+		float: none;
+	}
+}
+
+/** FAVES **/
+
+section.faves {
+	--bg: #222;
+
+	padding: 60px;
+}
+
+section.faves .container {
+	display: flex;
+	flex-direction: column;
+}
+
+section.faves .title {
+	font-family: "SFRounded-Black", sans-serif;
+	font-size: 72px;
+	text-align: center;
+}
+
+.pairings {
+	width: calc(100vw - 300px);
+}
+
+.pair {
+	position: relative;
+	/* min-height: 200px; */
+	overflow: hidden;
+	background-color: #404040;
+	border-radius: 100px;
+	padding: 43px 86px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.pair:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: color;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+/* Detect Safari and disable backdrop-filter; doesn't play nicely with mix-blend-mode */
+@media not all and (min-resolution: 0.001dpcm) {
+	.pair {
+		background-size: cover !important;
+	}
+
+	.pair:before {
+		-webkit-backdrop-filter: none !important;
+		backdrop-filter: none !important;
+	}
+}
+
+.pair .pair-name {
+	position: relative;
+	font-family: "SFRounded-Black", sans-serif;
+	font-size: 96px;
+	line-height: 0.8;
+	flex-grow: 1;
+	margin-right: 50px;
+}
+
+.pair .explain {
+	font-size: 0.375em;
+	margin-top: 10px;
+}
+
+.pair .desc {
+	position: relative;
+	width: 950px;
+}
+
+.pair.choukei {
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(./pair-choukei.webp), url(./pair-choukei.webp);
+	background-size: 100%, 75%, 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pair.choukei:before {
+	background: linear-gradient(90deg, #ff9494 0%, #7da9f8 100%);
+}
+
+.pair.iro {
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(./pair-iro.webp), url(./pair-iro.webp);
+	background-size: 100%, 75%, 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pair.iro:before {
+	background: linear-gradient(90deg, #7da9f8 0%, #a88dcb 100%);
+}
+
+.pair.kinniku {
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(./pair-kinniku.webp), url(./pair-kinniku.webp);
+	background-size: 100%, 75%, 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pair.kinniku:before {
+	background: linear-gradient(90deg, #7da9f8 0%, #ecf176 100%);
+}
+
+.pair.suuji {
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(./pair-suuji.webp), url(./pair-suuji.webp);
+	background-size: 100%, 75%, 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pair.suuji:before {
+	background: linear-gradient(90deg, #a88dcb 0%, #ecf176 100%);
+}
+
+@media (max-width: 1400px) {
+	section.faves .title {
+		font-size: 48px;
+	}
+
+	.pairings {
+		width: calc(100vw - 50px);
+	}
+
+	.pair {
+		flex-direction: column;
+		border-radius: 25px;
+		padding: 21px 43px;
+	}
+
+	.pair .pair-name {
+		margin-right: 0;
+		text-align: center;
+		font-size: 80px;
+	}
+
+	.pair .desc {
+		width: 100%;
+	}
+}

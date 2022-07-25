@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Duncan</title>
+	<meta name="title" content="Duncan">
+	<meta name="description" content="About me">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,700&display=block">
+	<link rel="stylesheet" href="./assets/style-index.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/brand/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/brand/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/brand/favicon-16x16.png">
+	<link rel="manifest" href="./assets/brand/site.webmanifest">
+	<meta name="msapplication-config" content="./assets/brand/browserconfig.xml" />
+	<meta name="msapplication-TileColor" content="#1A50BC">
+	<meta name="theme-color" content="#1A50BC">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Duncan">
+	<meta property="og:description" content="About me">
+	<meta property="og:image" content="https://karamatsusever.github.io/assets/brand/social-image.png">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="Duncan">
+	<meta property="twitter:description" content="About me">
+	<meta property="twitter:image" content="https://karamatsusever.github.io/assets/brand/social-image.png">
+</head>
+
+<body>
+	<section class="home">
+		<div class="container">
+			<img src="./assets/karamatsu.svg" alt="Karamatsu" class="karamatsu">
+			<div class="text">
+				<div class="title">duncan★</div>
+				<div class="bio">
+					✦
+					<script>
+						var today = new Date();
+						var birthDate = new Date("2000-08-08");
+						var age = today.getFullYear() - birthDate.getFullYear();
+						var m = today.getMonth() - birthDate.getMonth();
+						if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
+							age--;
+
+						document.write(age);
+					</script>
+					<noscript>21+</noscript> years old<br />
+					✦ Male (he/him) <img src="./assets/flag-lgbtq.svg" alt="LGBTQ+" class="flag"> <img
+						src="./assets/flag-gay-male.svg" alt="Gay male" class="flag"><br />
+					✦ Multilingual <img src="./assets/flag-gb.svg" alt="English" class="flag"> <img
+						src="./assets/flag-fr.svg" alt="French" class="flag"><br />
+					✦ From Belgium <img src="./assets/flag-be.svg" alt="Belgium" class="flag"> <img
+						src="./assets/flag-eu.svg" alt="Europe" class="flag"><br />
+				</div>
+				<div class="buttons">
+					<a href="#faves" class="btn">
+						<img src="./assets/icon-people.svg" alt=""><span>My favourite pairings</span>
+					</a>
+
+					<a href="https://twitter.com/karamatsusever" class="btn right">
+						<img src="./assets/icon-twitter.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="faves" id="faves">
+		<div class="container">
+			<div class="title">★&nbsp;my favourite pairings&nbsp;★</div>
+			<div class="pairings">
+				<div class="pair choukei">
+					<div class="pair-name">
+						choukei
+						<div class="explain">osomatsu&nbsp;&amp;&nbsp;karamatsu</div>
+					</div>
+				</div>
+				<div class="pair iro">
+					<div class="pair-name">
+						iro
+						<div class="explain">karamatsu&nbsp;&amp;&nbsp;ichimatsu</div>
+					</div>
+				</div>
+				<div class="pair kinniku">
+					<div class="pair-name">
+						kinniku
+						<div class="explain">karamatsu&nbsp;&amp;&nbsp;jyushimatsu</div>
+					</div>
+				</div>
+				<div class="pair suuji">
+					<div class="pair-name">
+						suuji
+						<div class="explain">ichimatsu&nbsp;&amp;&nbsp;jyushimatsu</div>
+					</div>
+				</div>
+			</div>
+	</section>
+</body>
+
+</html>
