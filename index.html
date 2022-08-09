@@ -36,18 +36,7 @@
 			<div class="text">
 				<div class="title">duncan★</div>
 				<div class="bio">
-					✦
-					<script>
-						var today = new Date();
-						var birthDate = new Date("2000-08-08");
-						var age = today.getFullYear() - birthDate.getFullYear();
-						var m = today.getMonth() - birthDate.getMonth();
-						if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
-							age--;
-
-						document.write(age);
-					</script>
-					<noscript>21+</noscript> years old<br />
+					✦ <span id="age">22+</span> years old<br />
 					✦ Male (he/him) <img src="./assets/flag-lgbtq.svg" alt="LGBTQ+" class="flag"> <img
 						src="./assets/flag-gay-male.svg" alt="Gay male" class="flag"><br />
 					✦ Multilingual <img src="./assets/flag-gb.svg" alt="English" class="flag"> <img
@@ -97,6 +86,26 @@
 				</div>
 			</div>
 	</section>
+	<script>
+		const isDateValid = (...val) => !Number.isNaN(new Date(...val).valueOf());
+
+		const setAge = (currentDate) => {
+			if (!isDateValid(currentDate)) return;
+
+			const birthDate = new Date("2000-08-08");
+			const date = new Date(currentDate);
+			let age = date.getFullYear() - birthDate.getFullYear();
+			const m = date.getMonth() - birthDate.getMonth();
+			if (m < 0 || (m === 0 && date.getDate() < birthDate.getDate()))
+				age--;
+
+			document.getElementById("age").innerHTML = age;
+		}
+
+		setAge(new Date());
+
+		fetch(document.location).then((res) => res.headers.has("Date") && setAge(res.headers.get("Date")))
+	</script>
 </body>
 
 </html>
